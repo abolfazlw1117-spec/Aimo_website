@@ -1,72 +1,169 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AIMO — توسعه‌دهندهٔ اپلیکیشن‌های اندرویدی</title>
-<meta name="description" content="AIMO؛ توسعه‌دهندهٔ مستقل اپلیکیشن‌های اندروید. Independent Android app developer.">
-<meta name="theme-color" content="#07130e">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232fd48a'/%3E%3Cpath d='M9 23 16 8l7 15M12 18h8' stroke='%2307130e' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>aiom.shop | تیشرت ساده و سنگین</title>
+  <meta name="description" content="aiom.shop؛ تیشرت‌های ساده با پنبه‌ی سنگین، دوخت محکم و چاپ ماندگار. رنگ و سایزت را انتخاب کن.">
+  <meta name="theme-color" content="#141414">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 440'%3E%3Cpath fill='%23E4472B' d='M150 40L74 66L20 156L80 186L102 166L106 410H294L298 166L320 186L380 156L326 66L250 40Q200 100 150 40Z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;800;900&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
-<header class="bar">
-  <a class="logo" href="#top" aria-label="AIMO">AIMO</a>
-  <nav aria-label="main">
-    <a href="#about" data-en="About">درباره</a>
-    <a href="#apps" data-en="Apps">اپلیکیشن‌ها</a>
-    <a href="#contact" data-en="Contact">تماس</a>
-    <a href="#privacy" data-en="Privacy">حریم خصوصی</a>
-  </nav>
-  <button id="lang" type="button" aria-label="Switch to English">EN</button>
-</header>
+<body id="top">
+  <a class="skip" href="#shop">رفتن به محصولات</a>
 
-<main id="top">
-  <section class="hero">
-    <div class="radar" aria-hidden="true"><i></i><i></i><i></i><b></b></div>
-    <h1><span class="brand">AIMO</span><span class="tag" data-en="Android app developer">توسعه‌دهندهٔ اپلیکیشن‌های اندرویدی</span></h1>
-    <p data-en="Simple, useful Android apps, built by one independent developer.">اپلیکیشن‌های ساده و کاربردی اندروید، ساختهٔ یک توسعه‌دهندهٔ مستقل.</p>
-    <a class="btn" href="#apps" data-en="See the apps">دیدن اپلیکیشن‌ها</a>
-  </section>
-
-  <section id="about" class="wrap">
-    <h2 data-en="About the developer">دربارهٔ توسعه‌دهنده</h2>
-    <div class="glass">
-      <p data-en="AIMO is an independent Android developer. The goal is to build light, practical apps with a clear purpose, a Persian-first interface and respect for user privacy.">AIMO یک توسعه‌دهندهٔ مستقل اندروید است. هدف، ساخت اپلیکیشن‌هایی سبک و کاربردی با کارکرد روشن، رابط فارسی‌محور و احترام به حریم خصوصی کاربر است.</p>
+  <header class="nav">
+    <div class="nav-in wrap">
+      <a class="brand" href="#top" dir="ltr" aria-label="aiom.shop">aiom<span>.shop</span></a>
+      <nav class="links" aria-label="منوی اصلی">
+        <a href="#shop">محصولات</a>
+        <a href="#make">ساخت</a>
+        <a href="#size">راهنمای سایز</a>
+        <a href="#faq">سوال‌ها</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn" type="button" aria-haspopup="dialog">
+        سبد خرید <span class="count" id="cartCount" aria-live="polite">۰</span>
+      </button>
     </div>
-  </section>
+  </header>
 
-  <section id="apps" class="wrap">
-    <h2 data-en="Apps">اپلیکیشن‌ها</h2>
-    <div class="grid">
-      <!-- برای افزودن برنامهٔ جدید، یک article مشابه زیر کپی کنید. -->
-      <article class="glass app">
-        <div class="ico" aria-hidden="true">A</div>
-        <h3>AimoneAlarm</h3>
-        <p data-en="Helps you find a lost phone with bot commands (ring and location), plus scheduled alarms.">پیدا کردن گوشی گم‌شده با دستورهای ربات (زنگ و موقعیت)، به‌همراه آلارم‌های زمان‌بندی‌شده.</p>
-        <span class="badge" data-en="In development">در حال توسعه</span>
-      </article>
+  <main>
+    <!-- Hero -->
+    <section class="hero wrap" aria-labelledby="h1">
+      <div class="grid">
+        <div class="hero-copy">
+          <h1 id="h1" data-reveal>تیشرت ساده، سنگین، ماندگار</h1>
+          <p class="lead" data-reveal data-d="90">پنبه‌ی ۲۲۰ گرمی، دوخت دوبل و چاپ‌هایی که با شست‌وشو نمی‌روند. رنگ و سایزت را انتخاب کن، بقیه‌اش با ما.</p>
+          <p data-reveal data-d="180"><a class="btn" href="#shop">مشاهده‌ی محصولات</a></p>
+        </div>
+        <div class="stage" id="stage" data-reveal data-d="120">
+          <div class="stage-tee" id="heroWrap"><div id="heroTee"></div></div>
+          <div class="stage-ui">
+            <div class="sws" id="heroSwatches" role="group" aria-label="رنگ تیشرت"></div>
+            <p class="stage-label" id="heroColorLabel">رنگ: گچی</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Moving strip of the line-up -->
+    <section class="strip" aria-hidden="true">
+      <div class="track" id="track"></div>
+    </section>
+
+    <!-- Build quality -->
+    <section class="facts" id="make" aria-labelledby="makeH">
+      <div class="wrap grid">
+        <h2 id="makeH" data-reveal>ساده می‌دوزیم، محکم می‌دوزیم</h2>
+        <div class="fact-list">
+          <div class="fact" data-reveal data-d="80">
+            <h3>۲۲۰ گرم پنبه</h3>
+            <p>پارچه‌ای سنگین که روی تن می‌افتد و بعد از شست‌وشو شکل خودش را نگه می‌دارد.</p>
+          </div>
+          <div class="fact" data-reveal data-d="160">
+            <h3>دوخت دوبل</h3>
+            <p>یقه، آستین و لبه‌ی پایین با دو ردیف دوخت محکم شده‌اند تا لب‌پر نشوند.</p>
+          </div>
+          <div class="fact" data-reveal data-d="240">
+            <h3>چاپ ماندگار</h3>
+            <p>طرح‌ها روی پارچه می‌نشینند، نه روی آن؛ پس ترک نمی‌خورند و رنگ نمی‌دهند.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section class="shop wrap" id="shop" aria-labelledby="shopH">
+      <div class="shop-head">
+        <h2 id="shopH" data-reveal>همه‌ی تیشرت‌ها</h2>
+        <p data-reveal data-d="80">هشت طرح، شش رنگ، شش سایز.</p>
+      </div>
+      <div class="filters" data-reveal data-d="120">
+        <div class="chips" id="fitChips" role="group" aria-label="فیلتر برش"></div>
+        <div class="sws sws-filter" id="colorFilter" role="group" aria-label="فیلتر رنگ"></div>
+      </div>
+      <ul class="tiles" id="tiles" aria-live="polite"></ul>
+      <noscript><p>برای دیدن محصولات و ثبت سفارش، جاوااسکریپت را فعال کن یا به hello@aiom.shop ایمیل بزن.</p></noscript>
+    </section>
+
+    <!-- Size guide -->
+    <section class="size" id="size" aria-labelledby="sizeH">
+      <div class="wrap grid">
+        <div class="size-copy">
+          <h2 id="sizeH" data-reveal>سایز درست، از همان بار اول</h2>
+          <p data-reveal data-d="80">اندازه‌ها بر حسب سانتی‌متر و روی پارچه‌ی صاف گرفته شده‌اند. تیشرت‌های اورسایز با همین جدول، گشادتر و با شانه‌ی افتاده می‌نشینند.</p>
+          <ol data-reveal data-d="160">
+            <li>تیشرتی که اندازه‌ات است را صاف روی میز بگذار.</li>
+            <li>عرض سینه را از زیر بغل تا زیر بغل اندازه بگیر.</li>
+            <li>عدد را با ستون «عرض سینه» در جدول مقایسه کن.</li>
+          </ol>
+        </div>
+        <div class="size-table" data-reveal data-d="120">
+          <table>
+            <caption class="sr">جدول سایزها بر حسب سانتی‌متر</caption>
+            <thead><tr><th scope="col">سایز</th><th scope="col">عرض سینه</th><th scope="col">قد</th></tr></thead>
+            <tbody id="sizeBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq wrap" id="faq" aria-labelledby="faqH">
+      <div class="grid">
+        <h2 id="faqH" data-reveal>سوال‌های پرتکرار</h2>
+        <div class="faq-list">
+          <details data-reveal data-d="60">
+            <summary>سفارش چطور ثبت می‌شود؟</summary>
+            <p>رنگ و سایز را انتخاب کن، به سبد اضافه کن و دکمه‌ی «ثبت سفارش» را بزن. جزئیات سفارش در یک ایمیل آماده برای ما ارسال می‌شود و برای هماهنگی پرداخت و ارسال با تو در تماس می‌شویم.</p>
+          </details>
+          <details data-reveal data-d="120">
+            <summary>فرق معمولی و اورسایز چیست؟</summary>
+            <p>معمولی روی تن می‌نشیند و اورسایز شانه‌ی افتاده و بدنه‌ی گشاد دارد. اگر بین دو سایز مانده‌ای، برای حالت راحت‌تر سایز بالاتر را بگیر.</p>
+          </details>
+          <details data-reveal data-d="180">
+            <summary>تیشرت را چطور بشویم؟</summary>
+            <p>وارونه، با آب سرد و چرخه‌ی ملایم. خشک‌کن داغ استفاده نکن و اتو را مستقیم روی طرح نگذار تا چاپ سالم بماند.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-row">
+      <p>برای سفارش و پرسش: <a href="mailto:hello@aiom.shop" dir="ltr">hello@aiom.shop</a></p>
+      <nav aria-label="پیوندهای پایین صفحه">
+        <a href="#shop">محصولات</a>
+        <a href="#size">راهنمای سایز</a>
+        <a href="#faq">سوال‌ها</a>
+      </nav>
     </div>
-  </section>
+    <p class="foot-mark" dir="ltr" aria-hidden="true">aiom.shop</p>
+  </footer>
 
-  <section id="contact" class="wrap">
-    <h2 data-en="Contact">تماس با توسعه‌دهنده</h2>
-    <div class="glass">
-      <p data-en="Contact details will be added here.">اطلاعات تماس به‌زودی در این بخش قرار می‌گیرد.</p>
-      <!-- اطلاعات واقعی را اینجا اضافه کنید، مثلاً: <p><a href="mailto:...">...</a></p> -->
+  <!-- Product dialog -->
+  <dialog id="pdialog" aria-labelledby="pdTitle"></dialog>
+
+  <!-- Cart dialog -->
+  <dialog id="cart" aria-labelledby="cartTitle">
+    <div class="cart-in">
+      <div class="cart-head">
+        <h2 id="cartTitle">سبد خرید</h2>
+        <button class="x" type="button" data-close aria-label="بستن سبد خرید">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none"/></svg>
+        </button>
+      </div>
+      <div class="cart-body" id="cartBody"></div>
+      <div class="cart-foot" id="cartFoot"></div>
     </div>
-  </section>
+  </dialog>
 
-  <section id="privacy" class="wrap">
-    <h2 data-en="Privacy">حریم خصوصی</h2>
-    <div class="glass">
-      <p data-en="Each app’s privacy policy will be linked here once it is published, using its own official address.">سیاست حریم خصوصی هر اپلیکیشن، پس از انتشار و با آدرس رسمی خودش، در همین بخش پیوند داده می‌شود.</p>
-      <!-- پیوندها را بعد از ساخت صفحهٔ واقعی اضافه کنید؛ لینک ساختگی نگذارید. -->
-    </div>
-  </section>
-</main>
-
-<footer>© <span id="y">2026</span> AIMO</footer>
-<script src="script.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
