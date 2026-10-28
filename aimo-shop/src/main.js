@@ -233,7 +233,7 @@ $('#lf').onsubmit = async (e) => {
     if (mode === 'up' && !strong) { n.textContent = 'رمز عبور حداقل ۸ کاراکتر و شامل حرف و عدد باشد.'; return; }
     if (mode === 'in' && p.length < 8) { n.textContent = 'رمز عبور حداقل ۸ کاراکتر است.'; return; }
     if (mode === 'up') {
-      const { data, error } = await sb.auth.signUp({ email: em, password: p, options: { data: { full_name: nm.slice(0, 60) }, emailRedirectTo: location.origin } });
+      const { data, error } = await sb.auth.signUp({ email: em, password: p, options: { data: { full_name: nm.slice(0, 60) }, emailRedirectTo: location.origin + location.pathname } });
       if (error) { n.textContent = authMsg(error); return; }
       $('#lf').reset();
       if (data.session) { toast('حساب شما ساخته شد'); show('home'); }
@@ -249,13 +249,13 @@ $('#lforgot').onclick = async () => {
   const n = $('#lnt'), em = $('#lm').value.trim().toLowerCase();
   if (!configured) return;
   if (!EMAIL_RE.test(em)) { n.textContent = 'ابتدا ایمیل خود را وارد کنید.'; return; }
-  await sb.auth.resetPasswordForEmail(em, { redirectTo: location.origin });
+  await sb.auth.resetPasswordForEmail(em, { redirectTo: location.origin + location.pathname });
   n.textContent = 'اگر این ایمیل ثبت شده باشد، لینک بازیابی رمز ارسال شد.';
 };
 $('#lgoogle').onclick = async () => {
   const n = $('#lnt');
   if (!configured) { n.textContent = 'اتصال به سرویس احراز هویت تنظیم نشده است.'; return; }
-  const { error } = await sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: location.origin } });
+  const { error } = await sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: location.origin + location.pathname } });
   if (error) n.textContent = 'ورود با گوگل در دسترس نیست.';
 };
 $('#logout').onclick =async () => { await sb.auth.signOut(); toast('خارج شدید'); show('home'); };

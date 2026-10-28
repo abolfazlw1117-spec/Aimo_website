@@ -2,15 +2,17 @@ name: aimo-shop-build
 on:
   push:
     branches: [claude/aimo-shop-supabase]
-    paths: ['aimo-shop/**']
+    paths: ['aimo-shop/**', '.github/workflows/aimo-shop-build.yml']
   pull_request:
     paths: ['aimo-shop/**']
-defaults:
-  run:
-    working-directory: aimo-shop
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: aimo-shop
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -21,3 +23,15 @@ jobs:
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+      # Publish dist/ to the gh-pages branch (only on push, not on PRs). The existing site on main is untouched.
+      - name: Publish to gh-pages
+        if: github.event_name == 'push'
+        run: |
+          touch dist/.nojekyll
+          cd dist
+          git init -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Deploy aimo-shop ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" gh-pages
