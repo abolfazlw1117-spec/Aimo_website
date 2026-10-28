@@ -1,0 +1,23 @@
+name: aimo-shop-build
+on:
+  push:
+    branches: [claude/aimo-shop-supabase]
+    paths: ['aimo-shop/**']
+  pull_request:
+    paths: ['aimo-shop/**']
+defaults:
+  run:
+    working-directory: aimo-shop
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npm run build
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}

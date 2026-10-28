@@ -1,0 +1,22 @@
+{
+  "name": "aimo-shop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "check-env": "node scripts/check-env.mjs",
+    "build": "node scripts/check-env.mjs && vite build",
+    "postbuild": "node scripts/scan-dist.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

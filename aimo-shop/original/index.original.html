@@ -1,0 +1,388 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>آیمو شاپ | فروشگاه محصولات دیجیتال</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'"><meta name="referrer" content="no-referrer"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap">
+<style>
+:root{--bg:#0b1016;--s1:#121922;--s2:#192330;--ln:#233042;--tx:#e8eef5;--mu:#8a98a8;--ac:#12b5ff;--aci:#02131d;--hl:#39c5ff;--sh:0 12px 30px -16px #000;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#eef3f8;--s1:#fff;--s2:#e3ebf3;--ln:#d2dce8;--tx:#0f1a26;--mu:#586a7d;--ac:#0aa5ee;--hl:#0877b8;--sh:0 12px 30px -18px #1d4a70;color-scheme:light}}
+:root[data-theme="light"]{--bg:#eef3f8;--s1:#fff;--s2:#e3ebf3;--ln:#d2dce8;--tx:#0f1a26;--mu:#586a7d;--ac:#0aa5ee;--hl:#0877b8;--sh:0 12px 30px -18px #1d4a70;color-scheme:light}
+*{box-sizing:border-box}html{scroll-padding-top:84px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.8 Vazirmatn,system-ui,Tahoma,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer;border:0;background:none}
+h1,h2,h3,p{margin:0}[hidden]{display:none!important}
+:focus-visible{outline:2px solid var(--hl);outline-offset:2px;border-radius:8px}
+.ic{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.w{max-width:1180px;margin-inline:auto;padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px))}
+section{padding-block:30px;content-visibility:auto;contain-intrinsic-size:auto 500px}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:18px}.sh h2{font-size:clamp(21px,3vw,28px);font-weight:800}.sh p{color:var(--mu);font-size:13.5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 20px;border-radius:14px;font-weight:700;background:var(--ac);color:var(--aci);box-shadow:0 0 18px -5px var(--ac);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}.btn.o{background:transparent;border:1.5px solid var(--ln);color:var(--tx)}.btn.o:hover{border-color:var(--hl)}
+/* header */
+.hd{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);border-bottom:1px solid var(--ln)}
+.hi{display:flex;align-items:center;gap:14px;height:66px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;font-size:22px;direction:ltr;letter-spacing:-.02em}
+.lm{width:34px;height:34px;border-radius:11px;background:var(--s2);border:1.5px solid var(--ac);box-shadow:0 0 14px -3px var(--ac);display:grid;place-items:center;color:var(--hl)}
+.lg{color:var(--hl)}
+.nav{display:flex;gap:4px;margin-inline:auto}.nav button{padding:6px 14px;border-radius:99px;color:var(--mu);font-weight:500}.nav button:hover{background:var(--s2);color:var(--tx)}
+.ha{display:flex;gap:8px}.ib{position:relative;width:40px;height:40px;border-radius:12px;background:var(--s1);border:1px solid var(--ln);display:grid;place-items:center;font-size:19px}
+.ib:hover{border-color:var(--hl);color:var(--hl)}.bd{position:absolute;top:-6px;inset-inline-start:-6px;min-width:19px;height:19px;border-radius:10px;background:var(--ac);color:var(--aci);font-size:11px;font-weight:800;display:grid;place-items:center}
+.mb{display:none}
+/* hero */
+.hero{display:grid;grid-template-columns:2fr 1fr;gap:14px;padding-top:22px}.hero>*{min-width:0}
+.sl{position:relative;border-radius:18px;overflow:hidden;min-height:300px;box-shadow:var(--sh)}
+.sd{position:absolute;inset:0;padding:34px;display:flex;flex-direction:column;justify-content:center;gap:10px;color:#fff;opacity:0;visibility:hidden;transition:opacity .4s}
+.sd.on{opacity:1;visibility:visible}.sd h1{font-size:clamp(25px,4vw,40px);font-weight:800;line-height:1.4;max-width:15ch}.sd p{opacity:.9;max-width:38ch}.sd .btn{align-self:flex-start;margin-top:8px}
+.sd>.ic{position:absolute;inset-inline-end:-30px;bottom:-30px;width:260px;height:260px;opacity:.16;stroke-width:1.1}
+.g1{background:linear-gradient(120deg,#062c4d,#0a74c2)}.g2{background:linear-gradient(120deg,#07303f,#0b8aa8)}.g3{background:linear-gradient(120deg,#0b2154,#2563eb)}.g4{background:linear-gradient(120deg,#073a3d,#0e8f8a)}.g5{background:linear-gradient(120deg,#17284a,#3a63a8)}.g6{background:linear-gradient(120deg,#12195a,#4338ca)}
+.dots{position:absolute;bottom:14px;inset-inline-start:34px;display:flex;gap:7px;z-index:2}.dots button{width:9px;height:9px;border-radius:9px;background:#fff6;transition:width .2s}.dots button.on{width:26px;background:#fff}
+.side{display:grid;gap:14px}.sc{border-radius:18px;padding:20px;display:flex;flex-direction:column;justify-content:flex-end;gap:2px;color:#fff;text-align:start;min-height:143px;position:relative;overflow:hidden;transition:transform .15s}
+.sc:hover{transform:translateY(-3px)}.sc b{font-size:19px;position:relative}.sc span{font-size:13px;opacity:.9;position:relative}.sc>.ic{position:absolute;top:14px;inset-inline-start:14px;font-size:34px;opacity:.9}
+/* cats */
+.cr{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.cb{display:flex;flex-direction:column;align-items:center;gap:8px;padding:16px 8px;background:var(--s1);border:1.5px solid var(--ln);border-radius:16px;font-weight:700;font-size:13.5px;transition:.15s}
+.cb:hover,.cb[aria-pressed=true]{border-color:var(--ac);transform:translateY(-3px)}.cb[aria-pressed=true]{background:var(--s2)}
+.ci{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;font-size:24px;background:var(--s2)!important;color:var(--hl);border:1px solid var(--ln)}
+/* products */
+.tl{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.se{flex:1 1 240px;min-width:0;display:flex;align-items:center;gap:8px;background:var(--s1);border:1.5px solid var(--ln);border-radius:14px;padding:0 14px}.se:focus-within{border-color:var(--ac)}.se input{flex:1;min-width:0;border:0;background:none;outline:0;padding:10px 0}.se .ic{color:var(--mu)}
+.chips{display:flex;gap:7px;overflow-x:auto;max-width:100%;scrollbar-width:none}.chip{padding:6px 14px;border-radius:99px;border:1.5px solid var(--ln);background:var(--s1);white-space:nowrap;font-size:13.5px}.chip[aria-pressed=true]{background:var(--ac);color:var(--aci);border-color:var(--ac);font-weight:700}
+.gr{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:16px}
+.cd{display:flex;flex-direction:column;background:var(--s1);border:1.5px solid var(--ln);border-radius:16px;overflow:hidden;min-width:0;transition:transform .15s,border-color .15s}.cd:hover{transform:translateY(-3px);border-color:var(--hl)}
+.tile{position:relative;aspect-ratio:16/10;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:14px;background:var(--s2)!important;color:var(--mu);font-weight:700;font-size:13.5px;overflow:hidden}.tile>.ic{width:52px;height:52px;color:var(--hl);filter:drop-shadow(0 0 9px var(--ac));stroke-width:1.4}
+.tg{position:absolute;top:11px;inset-inline-start:11px;background:var(--ac);color:var(--aci);font-size:12px;padding:0 10px;border-radius:99px;font-weight:800}
+.cbd{display:flex;flex-direction:column;gap:4px;padding:14px;flex:1}.cn{font-weight:700;flex:1;line-height:1.7}.cc{font-size:12.5px;color:var(--mu)}
+.pr{display:flex;justify-content:space-between;align-items:center;margin-top:8px}.pv{font-weight:800;font-size:16px}.pv small{font-weight:400;color:var(--mu);font-size:12px;margin-inline-start:4px}
+.add{width:40px;height:40px;border-radius:12px;background:var(--ac);color:var(--aci);display:grid;place-items:center;font-size:20px;transition:transform .12s}.add:active{transform:scale(.9)}
+.em{grid-column:1/-1;text-align:center;color:var(--mu);padding:30px}.mo{display:flex;justify-content:center;margin-top:22px}
+/* promo */
+.pm{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:center;padding:34px;border-radius:28px;color:#fff;background:linear-gradient(110deg,#07162b,#0b3a73 65%,#0a74c2);border:1px solid var(--ln);overflow:hidden}.pm>*{min-width:0}
+.pm h2{font-size:clamp(24px,3.6vw,36px);font-weight:800;line-height:1.5}.pm p{opacity:.9;margin-top:6px}.pm .btn{margin-top:18px}
+.ps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.po{aspect-ratio:3/4;border-radius:14px;padding:10px;display:flex;align-items:flex-end;font-weight:700;font-size:13px;box-shadow:0 8px 18px -10px #000}.po:nth-child(even){transform:translateY(12px)}
+.tr{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:center;padding-block:20px;border-block:1px solid var(--ln);color:var(--mu);font-weight:500}.tr span{display:inline-flex;gap:8px;align-items:center}.tr .ic{color:var(--hl);font-size:20px}
+/* reviews */
+.rg{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:start}.rg>*{min-width:0}.rl{display:grid;gap:12px}
+.rv{background:var(--s1);border:1.5px solid var(--ln);border-radius:18px;padding:14px 18px}.rv header{display:flex;justify-content:space-between;font-weight:700}.st{color:#fbbf24;letter-spacing:2px}.rv p{color:var(--mu)}
+.re{border:1.5px dashed var(--ln);border-radius:18px;padding:28px;text-align:center;color:var(--mu)}
+.fm{background:var(--s1);border:1.5px solid var(--ln);border-radius:22px;padding:20px;display:grid;gap:12px}.fm label{display:grid;gap:4px;font-weight:500;font-size:13.5px}
+.fm input,.fm select,.fm textarea{width:100%;background:var(--bg);border:1.5px solid var(--ln);border-radius:12px;padding:9px 12px;outline:0}.fm input:focus,.fm select:focus,.fm textarea:focus{border-color:var(--ac)}.fm textarea{min-height:84px;resize:vertical}
+.nt{font-size:13px;color:var(--hl);min-height:1.4em}
+.sb{background:var(--s1);border:1.5px solid var(--ac);box-shadow:0 0 34px -14px var(--ac);color:var(--tx);border-radius:18px;padding:30px 34px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.sb h2{font-size:clamp(22px,3vw,30px);font-weight:800}
+.hn{display:flex;gap:10px;flex-wrap:wrap}.hn button{background:var(--s2);color:var(--hl);border-radius:13px;padding:8px 16px;font-weight:700;direction:ltr;display:inline-flex;gap:8px;align-items:center}
+.bl{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.po2{background:var(--s1);border:1.5px solid var(--ln);border-radius:22px;overflow:hidden;text-align:start;display:flex;flex-direction:column;min-width:0;transition:border-color .15s}.po2:hover{border-color:var(--hl)}.po2 .tile{aspect-ratio:16/7}
+.po2 div.t{padding:14px 18px 16px;display:grid;gap:4px}.po2 h3{font-size:16.5px;line-height:1.7}.po2 small{color:var(--mu)}.po2 .x{color:var(--mu);font-size:14px}
+.fq{display:grid;gap:10px;max-width:860px}.fq details{background:var(--s1);border:1.5px solid var(--ln);border-radius:16px;padding:0 18px}.fq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;padding:14px 0;font-weight:700}.fq summary::-webkit-details-marker{display:none}.fq summary .ic{color:var(--hl);transition:transform .2s}.fq details[open] summary .ic{transform:rotate(45deg)}.fq p{color:var(--mu);padding-bottom:14px}
+/* cats page + login */
+.ph{padding-block:26px 6px;font-size:13px;color:var(--mu)}.ph b{display:block;color:var(--tx);font-size:28px;font-weight:800;margin-top:4px}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;padding-bottom:30px}
+.cx{background:var(--s1);border:1.5px solid var(--ln);border-radius:22px;padding:18px;display:grid;gap:12px;min-width:0}.cx header{display:flex;align-items:center;gap:12px;font-weight:800;font-size:17px}.cx header .ci{width:42px;height:42px;font-size:21px}.cx header button{margin-inline-start:auto;color:var(--hl);font-size:13px;font-weight:700}
+.sl2{display:flex;flex-wrap:wrap;gap:8px}.sl2 button{padding:8px 14px;border-radius:12px;background:var(--s2);font-weight:500;font-size:13.5px}.sl2 button:hover{background:var(--ac);color:var(--aci)}
+.lw{max-width:440px;margin:34px auto;background:var(--s1);border:1.5px solid var(--ln);border-radius:26px;padding:28px;display:grid;gap:14px;box-shadow:var(--sh)}.lw h2{text-align:center;font-size:24px;font-weight:800}
+.tb{display:grid;grid-template-columns:1fr 1fr;background:var(--s2);border-radius:14px;padding:4px}.tb button{padding:8px;border-radius:11px;font-weight:700;color:var(--mu)}.tb button[aria-pressed=true]{background:var(--ac);color:var(--aci)}
+.lw .fm{border:0;padding:0;background:none}
+/* footer */
+footer{background:var(--s1);border-top:1px solid var(--ln);margin-top:24px;padding-block:36px 24px}
+.fg{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:26px}.fg>*{min-width:0}.fg h4{margin:0 0 8px}.fg ul{list-style:none;margin:0;padding:0;display:grid;gap:4px;color:var(--mu)}.fg li button{color:inherit}.fg li button:hover{color:var(--hl)}.fa p{color:var(--mu);margin-top:10px;font-size:14px;max-width:40ch}
+.bg2{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.bg2 span{display:inline-flex;gap:6px;align-items:center;padding:6px 12px;border-radius:12px;background:var(--s2);font-size:12.5px;color:var(--mu)}.bg2 .ic{color:var(--hl)}
+.cp{margin-top:24px;padding-top:16px;border-top:1px solid var(--ln);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px;color:var(--mu)}
+/* cart, fab, toast */
+.sc2{position:fixed;inset:0;background:#0009;z-index:70;opacity:0;pointer-events:none;transition:opacity .2s}.sc2.on{opacity:1;pointer-events:auto}
+.dr{position:fixed;top:0;bottom:0;left:0;z-index:80;width:min(400px,100%);background:var(--s1);border-right:1px solid var(--ln);display:flex;flex-direction:column;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px);transform:translateX(-102%);visibility:hidden;transition:transform .25s,visibility .25s}.dr.on{transform:none;visibility:visible}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--ln)}.dh h3{font-size:19px}
+.dl{flex:1;overflow:auto;padding:14px 18px;display:grid;align-content:start;gap:12px}.de{color:var(--mu);text-align:center;padding:40px 0}
+.ln{display:grid;grid-template-columns:46px 1fr;gap:12px;align-items:center}.ln .ci{width:46px;height:46px;font-size:21px}.ln b{font-size:14px;line-height:1.6;display:block}.mt{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--mu)}
+.q{display:inline-flex;align-items:center;border:1.5px solid var(--ln);border-radius:10px}.q button{width:28px;height:28px;font-weight:800}.q span{min-width:22px;text-align:center;color:var(--tx);font-weight:700}
+.df{padding:14px 18px;border-top:1px solid var(--ln);display:grid;gap:10px}.tot{display:flex;justify-content:space-between;font-weight:800}.dm{font-size:13px;color:var(--mu);min-height:1.3em}
+.fab{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));inset-inline-end:16px;z-index:40;width:52px;height:52px;border-radius:50%;background:var(--ac);color:var(--aci);display:grid;place-items:center;font-size:24px;box-shadow:var(--sh)}
+.sp{position:fixed;bottom:calc(82px + env(safe-area-inset-bottom,0px));inset-inline-end:16px;z-index:40;width:min(290px,calc(100% - 32px));background:var(--s1);border:1.5px solid var(--ln);border-radius:20px;padding:16px;display:grid;gap:10px;box-shadow:var(--sh)}.sp p{color:var(--mu);font-size:13.5px}.sp .hn button{background:var(--s2);color:var(--tx)}
+.ts{position:fixed;bottom:calc(86px + env(safe-area-inset-bottom,0px));left:50%;transform:translate(-50%,20px);z-index:90;background:var(--tx);color:var(--bg);padding:9px 18px;border-radius:99px;font-weight:700;font-size:14px;opacity:0;pointer-events:none;transition:.25s;max-width:calc(100% - 32px);text-align:center}.ts.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:860px){.hero,.pm,.rg{grid-template-columns:1fr}.side{grid-template-columns:1fr 1fr}.cr{grid-template-columns:repeat(3,1fr)}.fg{grid-template-columns:1fr 1fr}.fa{grid-column:1/-1}.pm{padding:24px}
+.mb{display:grid}.nav{display:none;position:absolute;top:100%;inset-inline:0;background:var(--bg);border-bottom:1px solid var(--ln);flex-direction:column;padding:10px 16px;margin:0}.nav.on{display:flex}.nav button{text-align:start;padding:10px 14px}.hd{position:sticky}.ha{margin-inline-start:auto}}
+@media(max-width:480px){.cr{grid-template-columns:repeat(2,1fr)}.sd{padding:22px}.dots{inset-inline-start:22px}.sb{padding:24px 20px}.sl{min-height:280px}.gr{grid-template-columns:1fr 1fr;gap:12px}.cbd{padding:11px}.cn{font-size:13.5px}.pv{font-size:14px}.pv small{display:none}}
+/* liquid glass */
+:root{--gl:rgba(255,255,255,.055);--gl2:rgba(255,255,255,.1);--gb:rgba(255,255,255,.13);--hi:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 0 rgba(255,255,255,.04);--hdr:rgba(11,16,22,.55);--pan:rgba(14,21,30,.72);--bl:16px;--sp:cubic-bezier(.34,1.56,.64,1);--ez:cubic-bezier(.22,1,.36,1)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--gl:rgba(255,255,255,.55);--gl2:rgba(255,255,255,.78);--gb:rgba(255,255,255,.92);--hi:inset 0 1px 0 #fff,inset 0 -1px 0 rgba(15,26,38,.05);--hdr:rgba(238,243,248,.62);--pan:rgba(255,255,255,.8)}}
+:root[data-theme="light"]{--gl:rgba(255,255,255,.55);--gl2:rgba(255,255,255,.78);--gb:rgba(255,255,255,.92);--hi:inset 0 1px 0 #fff,inset 0 -1px 0 rgba(15,26,38,.05);--hdr:rgba(238,243,248,.62);--pan:rgba(255,255,255,.8)}
+.bgfx{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.bgfx i{position:absolute;width:60vmax;height:60vmax;border-radius:50%;will-change:transform;animation:fl 26s ease-in-out infinite alternate}
+.bgfx i:nth-child(1){top:-20vmax;inset-inline-start:-12vmax;background:radial-gradient(circle,rgba(18,140,255,.34),transparent 65%)}
+.bgfx i:nth-child(2){top:25vh;inset-inline-end:-22vmax;background:radial-gradient(circle,rgba(0,220,255,.2),transparent 65%);animation-duration:32s;animation-delay:-8s}
+.bgfx i:nth-child(3){bottom:-26vmax;inset-inline-start:15vw;background:radial-gradient(circle,rgba(70,90,255,.26),transparent 65%);animation-duration:38s;animation-delay:-14s}
+@keyframes fl{to{transform:translate3d(6vw,5vh,0) scale(1.15)}}
+body::before{background:var(--hdr)!important;-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+.hd,.cd,.cb,.cx,.rv,.fm,.lw,.fq details,.po2,.se,.ib,.sp,.re,footer,.chip,.sl2 button,.q,.tb,.tr{-webkit-backdrop-filter:blur(var(--bl)) saturate(1.5);backdrop-filter:blur(var(--bl)) saturate(1.5)}
+.cd,.cb,.cx,.rv,.fm,.lw,.fq details,.po2,.se,.ib,.re,footer{background:var(--gl);border-color:var(--gb);box-shadow:var(--hi),var(--sh)}
+.hd{background:var(--hdr);border-bottom-color:var(--gb)}.sp,.dr{background:var(--pan);border-color:var(--gb);-webkit-backdrop-filter:blur(24px) saturate(1.6);backdrop-filter:blur(24px) saturate(1.6)}
+.chip,.sl2 button,.q,.tb{background:var(--gl);border-color:var(--gb)}.tb{border:1px solid var(--gb)}
+.lw .fm{box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;background:none}
+.fm input,.fm select,.fm textarea{background:var(--gl)}
+.tile{background:linear-gradient(145deg,var(--gl2),transparent)!important}.ci{background:var(--gl2)!important;box-shadow:var(--hi)}
+.cd,.cb{position:relative}.cd::before,.cb::before{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(135deg,rgba(255,255,255,.13),transparent 42%);pointer-events:none}
+.sl,.sc,.pm{box-shadow:var(--hi),var(--sh)}
+.btn,.add{background:linear-gradient(180deg,rgba(255,255,255,.34),transparent 58%),var(--ac);box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 0 18px -5px var(--ac)}.btn.o{background:var(--gl);box-shadow:var(--hi)}
+.ts{background:var(--pan);color:var(--tx);border:1px solid var(--gb);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+.sc2.on{-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+/* motion */
+.btn,.ib,.add,.cb,.cd,.chip,.sc,.po2,.sl2 button,.fab{transition:transform .4s var(--sp),border-color .2s,background .2s,box-shadow .2s}
+.btn:active,.ib:active,.add:active,.cb:active,.chip:active,.sc:active,.fab:active,.sl2 button:active{transform:scale(.94)}.cd:hover,.cb:hover,.sc:hover{transform:translateY(-4px)}
+.rv-in{opacity:0}.rv-in.in{opacity:1;animation:up .7s var(--ez) backwards;animation-delay:var(--d,0s)}
+@keyframes up{from{opacity:0;transform:translateY(20px)}}
+@keyframes pop{from{opacity:0;transform:translateY(12px) scale(.92)}}
+@keyframes vin{from{opacity:0;transform:translateY(14px)}}
+@keyframes bump{40%{transform:scale(1.45)}}
+main{animation:vin .5s var(--ez)}.bd.bump{animation:bump .45s var(--sp)}
+.sd{transform:scale(1.05);transition:opacity .7s ease,transform 1.4s var(--ez),visibility .7s}.sd.on{transform:none}
+.sd h1,.sd p,.sd .btn{opacity:0;transform:translateY(16px);transition:opacity .7s var(--ez),transform .7s var(--ez)}
+.sd.on h1{opacity:1;transform:none;transition-delay:.15s}.sd.on p{opacity:1;transform:none;transition-delay:.28s}.sd.on .btn{opacity:1;transform:none;transition:opacity .7s var(--ez) .4s,transform .4s var(--sp)}
+.dots button{transition:width .35s var(--sp),background .2s}
+.sp{animation:pop .4s var(--sp)}.nav.on{animation:up .3s var(--ez)}.ln,.rv{animation:up .4s var(--ez) backwards}.fq details[open] p,.po2 .x:not([hidden]){animation:up .35s var(--ez)}
+.dr{transition:transform .5s var(--ez),visibility .5s}.sc2{transition:opacity .35s}
+.ts{transition:opacity .3s,transform .5s var(--sp)}
+@media(max-width:860px){:root{--bl:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}.rv-in{opacity:1!important}}
+/* liquid glass v2 + smooth motion + admin */
+:root{--ez:cubic-bezier(.16,1,.3,1)}
+.cd,.cb,.cx,.po2,.sb,.lw{--mx:50%;--my:0px}
+.cd::after,.cb::after,.cx::after,.po2::after,.sb::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:1;background:radial-gradient(260px circle at var(--mx) var(--my),rgba(255,255,255,.2),transparent 62%);opacity:0;transition:opacity .5s var(--ez)}
+.cd:hover::after,.cb:hover::after,.cx:hover::after,.po2:hover::after,.sb:hover::after{opacity:1}
+.cd,.cb,.cx,.rv,.fm,.po2,.sb,.lw,.fq details,.re,.ar{background:linear-gradient(150deg,var(--gl2),var(--gl) 55%);box-shadow:var(--hi),inset 0 0 26px rgba(255,255,255,.035),var(--sh)}
+.cd,.cb,.cx,.rv,.po2,.se,.ib,.chip,.sl2 button,.q,.tb,.tr,.re,.fq details{-webkit-backdrop-filter:none;backdrop-filter:none}
+.cd,.cb,.cx,.po2{transition:transform .6s var(--ez),border-color .3s,box-shadow .4s}
+.cd:hover,.cb:hover,.cx:hover,.po2:hover,.sc:hover{transform:translate3d(0,-5px,0);will-change:transform}
+.btn,.add,.ib,.chip,.fab,.sl2 button{transition:transform .5s var(--sp),box-shadow .3s,background .25s,border-color .25s}
+.rv-in.in{animation-duration:.9s}
+::view-transition-group(root){animation-duration:.45s;animation-timing-function:var(--ez)}
+.ad{position:fixed;inset:0;z-index:100;overflow:auto;background:var(--hdr);-webkit-backdrop-filter:blur(34px) saturate(1.6);backdrop-filter:blur(34px) saturate(1.6);padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px);animation:vin .5s var(--ez)}
+.ap{padding-block:20px;display:grid;gap:16px}.ah{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}.ah .tb{min-width:220px}
+.at{display:grid;gap:8px}.ar{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px 14px;border-radius:14px;border:1px solid var(--gb)}.ar button{color:var(--hl);font-weight:700;margin-inline-start:12px}.ar small{color:var(--mu)}
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;align-items:start}.kc{display:block;padding:10px;border-radius:12px;background:var(--gl2);word-break:break-all;user-select:all}
+/* sliding pills + tab transitions */
+.tb,.chips{position:relative}
+@media(min-width:861px){.nav{position:relative}}
+@media(max-width:860px){.nav .pl{display:none}}
+.pl{position:absolute;top:0;left:0;z-index:0;pointer-events:none;opacity:0;will-change:transform;background:linear-gradient(180deg,rgba(255,255,255,.34),transparent 60%),var(--ac);box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 6px 18px -6px var(--ac);transition:transform .6s var(--ez),width .6s var(--ez),height .6s var(--ez),opacity .3s}
+.tb .pl{border-radius:11px}.chips .pl,.nav .pl{border-radius:99px}
+.pl.hv{background:var(--gl2);box-shadow:var(--hi);border:1px solid var(--gb)}
+.tb button,.chip,.nav button{position:relative;z-index:1;transition:color .35s var(--ez),transform .5s var(--sp)}
+.tb button[aria-pressed=true],.chip[aria-pressed=true]{background:transparent!important;border-color:transparent;color:var(--aci)}
+.nav button:hover{background:transparent;color:var(--tx)}
+.cb[aria-pressed=true]{box-shadow:var(--hi),0 0 0 1px var(--ac),0 12px 30px -12px var(--ac)}
+.cb{transition:transform .6s var(--ez),border-color .3s,box-shadow .5s var(--ez),background .4s}
+#lf label:not([hidden]){animation:up .5s var(--ez) backwards}
+.ap>*:not(.ah){animation:up .55s var(--ez) backwards}.ap>*:nth-child(3){animation-delay:.07s}.ap>*:nth-child(4){animation-delay:.14s}.ap>*:nth-child(5){animation-delay:.2s}
+/* no blue tap/selection flash */
+html{-webkit-tap-highlight-color:transparent}
+body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+input,textarea,select,.kc,.rv p,.sp p{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
+button,a,summary,.cd,.cb,.sc,.po2,.chip,.ib,.fab,.add{touch-action:manipulation;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+svg,i,img{-webkit-user-drag:none;pointer-events:none}
+button svg,a svg{pointer-events:none}
+::selection{background:transparent}
+input::selection,textarea::selection,.kc::selection,.rv p::selection{background:rgba(18,181,255,.35)}
+:focus:not(:focus-visible){outline:none}
+button:active,.cd:active,.cb:active,.po2:active,.sc:active{transition-duration:.12s}
+</style></head><body><div class="bgfx" aria-hidden="true"><i></i><i></i><i></i></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-ai" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></symbol>
+<symbol id="i-num" viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 18h2"/></symbol>
+<symbol id="i-sub" viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11" rx="2"/><path d="M3 9h18M12 9v11M12 9c-3 0-4.5-4-1.5-4.5C12 4.3 12 9 12 9zm0 0c3 0 4.5-4 1.5-4.5C12 4.3 12 9 12 9z"/></symbol>
+<symbol id="i-game" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="11" rx="5.5"/><path d="M8 10.5v4M6 12.5h4M15.5 11.5h.01M17.5 13.5h.01"/></symbol>
+<symbol id="i-tg" viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8z"/><path d="M11 13l4-4"/></symbol>
+<symbol id="i-cart" viewBox="0 0 24 24"><path d="M5 7h14l-1.4 10.2a2 2 0 01-2 1.8H8.4a2 2 0 01-2-1.8zM9 7a3 3 0 016 0"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-ok" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="i-sh" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/></symbol>
+<symbol id="i-hs" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0116 0v2M4 14h3v5H5a1 1 0 01-1-1zM20 14h-3v5h2a1 1 0 001-1z"/></symbol>
+<symbol id="i-wl" viewBox="0 0 24 24"><path d="M4 8h14a2 2 0 012 2v8a2 2 0 01-2 2H6a2 2 0 01-2-2zM4 8l2-3h9"/></symbol>
+<symbol id="i-bz" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+<symbol id="i-cp" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 00-2-2H6a2 2 0 00-2 2v8a2 2 0 002 2h2"/></symbol>
+</defs></svg>
+
+<header class="hd"><div class="w hi">
+<button class="ib mb" data-act="menu" aria-label="منو"><svg class="ic"><use href="#i-menu"/></svg></button>
+<a class="logo" href="#home" data-go="home"><span class="lm"><svg class="ic"><use href="#i-ai"/></svg></span>aimo<span class="lg">.shop</span></a>
+<nav class="nav" id="nav"><button data-go="home">خانه</button><button data-go="cats">دسته‌بندی‌ها</button><button data-to="products">محصولات</button><button data-to="blog">وبلاگ</button><button data-to="faq">سوالات متداول</button><button data-to="contact">ارتباط با ما</button></nav>
+<div class="ha"><button class="ib" data-act="theme" aria-label="تغییر تم"><svg class="ic"><use href="#i-moon"/></svg></button><button class="ib" data-act="search" aria-label="جستجو"><svg class="ic"><use href="#i-search"/></svg></button><button class="ib" data-act="cart" aria-label="سبد خرید"><svg class="ic"><use href="#i-cart"/></svg><span class="bd" id="cc" hidden>0</span></button><button class="ib" data-go="login" id="ub" aria-label="حساب کاربری"><svg class="ic"><use href="#i-user"/></svg></button></div>
+</div></header>
+
+<main id="v-home">
+<div class="w hero">
+ <div class="sl" id="sl"></div>
+ <div class="side"><button class="sc g3" data-cat="game"><svg class="ic"><use href="#i-game"/></svg><b>اکانت بازی</b><span>ظرفیت اول و دوم</span></button><button class="sc g4" data-cat="gift"><svg class="ic"><use href="#i-gift"/></svg><b>گیفت‌کارت</b><span>ارزی و بازی</span></button></div>
+</div>
+<section><div class="w"><div class="sh"><div><h2>همه‌چیز در یک نگاه</h2><p>یک دسته را بزنید تا محصولاتش فیلتر شود.</p></div><button class="btn o" data-go="cats">همه دسته‌ها</button></div><div class="cr" id="cr"></div></div></section>
+<section id="products"><div class="w"><div class="sh"><div><h2>محصولات پرفروش</h2><p>قیمت‌ها به تومان و با احتساب مالیات است.</p></div></div>
+<div class="tl"><label class="se"><svg class="ic"><use href="#i-search"/></svg><input id="q" type="search" placeholder="جستجوی محصول، مثلا «پریمیوم»" aria-label="جستجو"></label><div class="chips" id="chips"></div></div>
+<div class="gr" id="gr"></div><div class="mo"><button class="btn o" id="more">نمایش بیشتر</button></div></div></section>
+<section><div class="w"><div class="pm"><div><h2>اکانت بازی کنسول، آماده و اختصاصی</h2><p>تحویل سریع و پشتیبانی تا روز اول بازی. سبک موردعلاقه‌ات را انتخاب کن.</p><button class="btn" data-cat="game">مشاهده اکانت‌ها</button></div><div class="ps" aria-hidden="true"><div class="po g3">اکشن</div><div class="po g1">ماجرایی</div><div class="po g4">ورزشی</div><div class="po g6">ترسناک</div><div class="po g5">مسابقه‌ای</div><div class="po g2">نقش‌آفرینی</div></div></div></div></section>
+<div class="w"><div class="tr"><span><svg class="ic"><use href="#i-bz"/></svg>تحویل سریع</span><span><svg class="ic"><use href="#i-sh"/></svg>پرداخت امن</span><span><svg class="ic"><use href="#i-wl"/></svg>کیف پول</span><span><svg class="ic"><use href="#i-hs"/></svg>پشتیبانی هر روز</span></div></div>
+<section id="reviews"><div class="w"><div class="sh"><div><h2>نظرات شما</h2><p>تجربه‌ات را بنویس تا بقیه راحت‌تر انتخاب کنند.</p></div></div><div class="rg"><div class="rl" id="rl"><div class="re" id="re">هنوز نظری ثبت نشده. اولین نفر باش.</div></div>
+<form class="fm" id="rf"><input id="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;opacity:0;width:0;height:0"><label>نام<input id="rn" required maxlength="30" autocomplete="off"></label><label>امتیاز<select id="rs"><option value="5">۵ از ۵</option><option value="4">۴ از ۵</option><option value="3">۳ از ۵</option><option value="2">۲ از ۵</option><option value="1">۱ از ۵</option></select></label><label>نظر<textarea id="rt" required maxlength="300"></textarea></label><button class="btn" type="submit">ثبت نظر</button><div class="nt" id="rnt" role="status"></div></form></div></div></section>
+<section><div class="w"><div class="sb"><div><h2>همراه ما باش</h2><p>خبر تخفیف‌ها و محصولات جدید را زودتر بگیر.</p></div><div class="hn"><button data-copy="@aimo_shop"><svg class="ic"><use href="#i-cp"/></svg>@aimo_shop</button><button data-copy="t.me/aimo_shop"><svg class="ic"><use href="#i-cp"/></svg>t.me/aimo_shop</button></div></div></div></section>
+<section id="blog"><div class="w"><div class="sh"><div><h2>جدیدترین مقالات</h2><p>برای خواندن خلاصه، کارت را بزنید.</p></div></div><div class="bl" id="bl"></div></div></section>
+<section id="faq"><div class="w"><div class="sh"><div><h2>سوالات پرتکرار</h2></div></div><div class="fq">
+<details><summary>بعد از پرداخت، سفارش چقدر طول می‌کشد؟<svg class="ic"><use href="#i-plus"/></svg></summary><p>بیشتر محصولات بلافاصله بعد از پرداخت تحویل می‌شوند. زمان دقیق در صفحه هر محصول نوشته شده است.</p></details>
+<details><summary>اگر محصول مطابق توضیحات نبود چه می‌شود؟<svg class="ic"><use href="#i-plus"/></svg></summary><p>به پشتیبانی پیام بدهید؛ اگر مشکل از فروشگاه باشد، جایگزین یا بازگشت وجه انجام می‌شود.</p></details>
+<details><summary>چطور سفارشم را پیگیری کنم؟<svg class="ic"><use href="#i-plus"/></svg></summary><p>از بخش «سفارش‌های من» در حساب کاربری یا با ارسال شماره سفارش به پشتیبانی.</p></details>
+<details><summary>روش‌های پرداخت کدام‌اند؟<svg class="ic"><use href="#i-plus"/></svg></summary><p>کارت بانکی، کیف پول فروشگاه و ارز دیجیتال.</p></details></div></div></section>
+</main>
+
+<main id="v-cats" hidden><div class="w"><div class="ph">خانه / دسته‌بندی‌ها<b>همه دسته‌بندی‌ها</b></div><div class="cg" id="cg"></div></div></main>
+
+<main id="v-login" hidden><div class="w"><div class="lw"><h2 id="lt">ورود به حساب</h2><div class="tb"><button data-tab="in" aria-pressed="true">ورود</button><button data-tab="up" aria-pressed="false">ثبت‌نام</button></div>
+<form class="fm" id="lf" novalidate><label id="ln" hidden>نام و نام خانوادگی<input id="la" autocomplete="name"></label><label>شماره موبایل<input id="lm" inputmode="numeric" placeholder="09123456789" autocomplete="tel"></label><label>رمز عبور<input id="lp" type="password" placeholder="حداقل ۸ کاراکتر" autocomplete="current-password"></label><label id="lo" hidden>کد تایید پیامکی (۵ رقم)<input id="lc" inputmode="numeric" maxlength="5"></label><button class="btn" type="submit" id="lb">ورود</button><div class="nt" id="lnt" role="status"></div></form></div></div></main>
+
+<footer id="contact"><div class="w"><div class="fg"><div class="fa"><a class="logo" href="#home" data-go="home"><span class="lm"><svg class="ic"><use href="#i-ai"/></svg></span>aimo<span class="lg">.shop</span></a><p>فروشگاه محصولات دیجیتال: اشتراک، گیفت‌کارت، شماره مجازی و اکانت بازی با تحویل سریع و پشتیبانی فارسی.</p><div class="bg2"><span><svg class="ic"><use href="#i-sh"/></svg>پرداخت امن</span><span><svg class="ic"><use href="#i-ok"/></svg>ضمانت تحویل</span></div></div>
+<div><h4>دسترسی سریع</h4><ul><li><button data-to="products">فروشگاه</button></li><li><button data-go="cats">دسته‌بندی‌ها</button></li><li><button data-to="blog">وبلاگ</button></li><li><button data-to="faq">سوالات متداول</button></li></ul></div>
+<div><h4>حساب کاربری</h4><ul><li><button data-go="login">ورود</button></li><li><button data-go="login" data-tab2="up">ثبت‌نام</button></li><li><button data-act="cart">سبد خرید</button></li><li><button data-msg="کیف پول بعد از ورود فعال می‌شود">کیف پول</button></li></ul></div>
+<div><h4>پشتیبانی</h4><ul><li><button data-act="support">تیکت پشتیبانی</button></li><li><button data-msg="قوانین به‌زودی منتشر می‌شود">قوانین و مقررات</button></li><li><button data-msg="حریم خصوصی شما محفوظ است">حریم خصوصی</button></li><li><button data-copy="t.me/aimo_support" style="direction:ltr">t.me/aimo_support</button></li></ul></div></div>
+<div class="cp"><span>© ۱۴۰۵ تمامی حقوق برای آیمو شاپ محفوظ است.</span><span>همه روزه ۱۲ تا ۲۳ پاسخگوی شما هستیم</span></div></div></footer>
+
+<button class="fab" data-act="support" aria-label="پشتیبانی"><svg class="ic"><use href="#i-hs"/></svg></button>
+<div class="sp" id="sp" hidden><b>پشتیبانی آنلاین</b><p>برای سفارش و پیگیری، شناسه زیر را کپی کن و در تلگرام پیام بده.</p><div class="hn"><button data-copy="t.me/aimo_support"><svg class="ic"><use href="#i-cp"/></svg>t.me/aimo_support</button></div></div>
+<div class="sc2" id="sc2" data-act="close"></div>
+<aside class="dr" id="dr" aria-label="سبد خرید"><div class="dh"><h3>سبد خرید</h3><button class="ib" data-act="close" aria-label="بستن"><svg class="ic"><use href="#i-x"/></svg></button></div><div class="dl" id="dl"></div><div class="df"><div class="tot"><span>جمع کل</span><span id="dt">۰ تومان</span></div><button class="btn" id="co">ادامه و پرداخت</button><div class="dm" id="dm" role="status"></div></div></aside>
+<div class="ts" id="ts" role="status"></div>
+
+<script>
+(function(){
+var C=[{k:'ai',n:'هوش مصنوعی',g:'g1',s:['ChatGPT','Claude','Gemini','تصویر']},{k:'num',n:'شماره مجازی',g:'g2',s:['دائمی','موقت']},{k:'sub',n:'اشتراک‌ها',g:'g5',s:['موزیک','فضای ابری']},{k:'gift',n:'گیفت‌کارت',g:'g4',s:['آمریکا']},{k:'game',n:'اکانت بازی',g:'g3',s:['اکشن','ورزشی']},{k:'tg',n:'خدمات تلگرام',g:'g6',s:['پریمیوم','استارز']}];
+var P=[[1,'ai','اشتراک ChatGPT پلاس، اختصاصی',2450000,'پرفروش'],[2,'num','شماره مجازی دائمی',695000],[3,'num','تمدید شماره مجازی دائمی',395000],[4,'game','اکانت بازی اکشن، ظرفیت اول',5200000,'تحویل آنی'],[5,'tg','تلگرام پریمیوم، ورود به اکانت',1050000],[6,'tg','تلگرام پریمیوم گیفتی',3380000],[7,'tg','استارز تلگرام، بسته ۵۰ عددی',218934],[8,'gift','گیفت‌کارت ۲۵ دلاری آمریکا',4980000,'پرفروش'],[9,'sub','اشتراک سالانه فضای ابری ۲ ترابایت',2150000],[10,'sub','اشتراک ماهانه موزیک استریم',380000],[11,'ai','اشتراک ابزار تولید تصویر با هوش مصنوعی',1290000],[12,'game','اکانت کنسول، بازی ورزشی',3700000]].map(function(a){return{id:a[0],c:a[1],n:a[2],p:a[3],b:a[4]};});
+var SL=[['g1','ai','هوش مصنوعی در دستان تو','اشتراک ChatGPT، Claude و ابزار تصویر با تحویل سریع.','ai'],['g2','num','شماره مجازی دائمی و موقت','برای تلگرام و شبکه‌های اجتماعی، فعال‌سازی در چند دقیقه.','num'],['g5','tg','تلگرام پریمیوم و استارز','ورود به اکانت یا گیفتی، هر کدام که می‌خواهی.','tg']];
+var BL=[['g1','ai','راهنمای خرید اشتراک هوش مصنوعی','۵ دقیقه مطالعه','اول نیازت را مشخص کن؛ نوشتن، کدنویسی یا تصویر. بعد پلن مناسب را با بودجه‌ات مقایسه کن.'],['g6','tg','تفاوت پریمیوم ورود به اکانت و گیفتی','۴ دقیقه مطالعه','در ورود به اکانت، اشتراک روی همان حساب فعال می‌شود؛ در گیفتی، کد هدیه برایت ارسال می‌شود.'],['g4','num','شماره مجازی چیست و چطور امن استفاده کنیم','۶ دقیقه مطالعه','شماره مجازی را فقط برای ثبت‌نام استفاده کن و کد تایید را هرگز با کسی به اشتراک نگذار.']];
+var fa=function(n){return Number(n).toLocaleString('fa-IR');},$=function(s){return document.querySelector(s);},$$=function(s){return document.querySelectorAll(s);};
+var ic=function(k){return '<svg class="ic"><use href="#i-'+k+'"/></svg>';};
+var cn=function(k){return C.filter(function(c){return c.k===k;})[0];};
+var S={cat:'all',q:'',all:false,cart:{},user:null},st=function(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k));localStorage.setItem(k,JSON.stringify(v));}catch(e){return null;}};
+S.cart=st('aimo-cart')||{};S.user=st('aimo-user');var sv=st('aimo-products');if(Array.isArray(sv))P=sv.filter(function(x){return x&&cn(x.c)&&+x.p>0;}).map(function(x){return{id:+x.id,c:x.c,n:clean(x.n,80),p:Math.round(+x.p),b:clean(x.b,20)||undefined};});
+var tt;function toast(m){var t=$('#ts');t.textContent=m;t.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){t.classList.remove('on');},2200);}
+/* views */
+function show(v){var f=function(){['home','cats','login'].forEach(function(x){$('#v-'+x).hidden=x!==v;});$('#nav').classList.remove('on');window.scrollTo({top:0,behavior:'instant'});};if(document.startViewTransition&&!matchMedia('(prefers-reduced-motion:reduce)').matches)document.startViewTransition(f);else f();}
+function to(id){if($('#v-home').hidden)show('home');setTimeout(function(){var e=document.getElementById(id);if(e)e.scrollIntoView({behavior:'smooth'});},30);}
+/* slider */
+$('#sl').innerHTML=SL.map(function(s,i){return '<div class="sd '+s[0]+(i?'':' on')+'"><h1>'+s[2]+'</h1><p>'+s[3]+'</p><button class="btn" data-cat="'+s[4]+'">مشاهده محصولات</button>'+ic(s[1])+'</div>';}).join('')+'<div class="dots">'+SL.map(function(s,i){return '<button data-sl="'+i+'" class="'+(i?'':'on')+'" aria-label="اسلاید '+fa(i+1)+'"></button>';}).join('')+'</div>';
+var si=0,timer;function go(i){si=(i+SL.length)%SL.length;$$('.sd').forEach(function(e,j){e.classList.toggle('on',j===si);});$$('[data-sl]').forEach(function(e,j){e.classList.toggle('on',j===si);});}
+function auto(){clearInterval(timer);if(!matchMedia('(prefers-reduced-motion:reduce)').matches)timer=setInterval(function(){if(!document.hidden)go(si+1);},5500);}auto();
+/* cats */
+$('#cr').innerHTML=C.map(function(c){return '<button class="cb" data-cat="'+c.k+'" aria-pressed="false"><span class="ci '+c.g+'">'+ic(c.k)+'</span>'+c.n+'</button>';}).join('');
+$('#chips').innerHTML=[{k:'all',n:'همه'}].concat(C).map(function(c){return '<button class="chip" data-chip="'+c.k+'" aria-pressed="'+(c.k==='all')+'">'+c.n+'</button>';}).join('');
+$('#cg').innerHTML=C.map(function(c){return '<div class="cx"><header><span class="ci '+c.g+'">'+ic(c.k)+'</span>'+c.n+'<button data-cat="'+c.k+'">مشاهده همه</button></header><div class="sl2">'+c.s.map(function(x){return '<button data-cat="'+c.k+'" data-sq="'+x+'">'+x+'</button>';}).join('')+'</div></div>';}).join('');
+function sync(){$$('[data-cat].cb').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.cat===S.cat));});$$('.chip').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.chip===S.cat));});}
+function grid(){var l=P.filter(function(x){return(S.cat==='all'||x.c===S.cat)&&(!S.q||x.n.indexOf(S.q)>-1||cn(x.c).n.indexOf(S.q)>-1);}),m=!S.all&&!S.q&&S.cat==='all'&&l.length>8;
+ var v=m?l.slice(0,8):l;$('#more').parentNode.hidden=!m;
+ $('#gr').innerHTML=v.length?v.map(function(x){var c=cn(x.c);return '<article class="cd"><div class="tile '+c.g+'">'+(x.b?'<span class="tg">'+x.b+'</span>':'')+ic(x.c)+c.n+'</div><div class="cbd"><span class="cc">'+c.n+'</span><span class="cn">'+x.n+'</span><div class="pr"><span class="pv">'+fa(x.p)+'<small>تومان</small></span><button class="add" data-add="'+x.id+'" aria-label="افزودن به سبد">'+ic('plus')+'</button></div></div></article>';}).join(''):'<div class="em">محصولی پیدا نشد. عبارت دیگری را امتحان کنید.</div>';sync();rev($('#gr'));}
+function pick(k,q){S.cat=k;S.q=q||'';$('#q').value=S.q;grid();to('products');}
+$('#more').onclick=function(){S.all=true;grid();};
+$('#q').oninput=function(e){S.q=e.target.value.trim();grid();};
+/* cart */
+function cart(){var ids=Object.keys(S.cart).filter(function(i){return S.cart[i]>0&&P.some(function(x){return String(x.id)===i;});}),n=0,sum=0;
+ $('#dl').innerHTML=ids.length?ids.map(function(id){var p=P.filter(function(x){return String(x.id)===id;})[0],q=S.cart[id];n+=q;sum+=p.p*q;return '<div class="ln"><span class="ci '+cn(p.c).g+'">'+ic(p.c)+'</span><div><b>'+p.n+'</b><div class="mt"><span class="q"><button data-q="'+id+'" data-d="-1" aria-label="کم">−</button><span>'+fa(q)+'</span><button data-q="'+id+'" data-d="1" aria-label="زیاد">+</button></span><span>'+fa(p.p*q)+' تومان</span></div></div></div>';}).join(''):'<div class="de">سبد خرید خالی است.</div>';
+ $('#dt').textContent=fa(sum)+' تومان';var b=$('#cc');b.hidden=!n;b.textContent=fa(n);$('#co').disabled=!n;$('#co').style.opacity=n?1:.5;$('#dm').textContent='';st('aimo-cart',S.cart);}
+function drawer(on){$('#dr').classList.toggle('on',on);$('#sc2').classList.toggle('on',on);}
+/* user */
+function who(){$('#ub').innerHTML=S.user?'<b>'+S.user.n.charAt(0)+'</b>':ic('user');$('#ub').title=S.user?S.user.n:'';}
+var mode='in',otp=false;
+function tab(m){mode=m;otp=false;$$('[data-tab]').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.tab===m));});$('#ln').hidden=m!=='up';$('#lo').hidden=true;$('#lb').textContent=m==='up'?'ادامه و دریافت کد':'ورود';$('#lt').textContent=m==='up'?'ساخت حساب کاربری':'ورود به حساب';$('#lnt').textContent='';}
+var dg=function(s){return s.replace(/[۰-۹]/g,function(d){return '۰۱۲۳۴۵۶۷۸۹'.indexOf(d);}).replace(/[٠-٩]/g,function(d){return '٠١٢٣٤٥٦٧٨٩'.indexOf(d);});};
+$('#lf').onsubmit=function(e){e.preventDefault();var m=dg($('#lm').value.trim()),p=$('#lp').value,nm=$('#la').value.trim(),n=$('#lnt');
+ if(user_out()){return;}
+ function user_out(){if(mode==='up'&&nm.length<3){n.textContent='نام کامل را وارد کنید.';return 1;}if(!/^09\d{9}$/.test(m)){n.textContent='شماره موبایل معتبر نیست (مثلا 09123456789).';return 1;}if(p.length<8){n.textContent='رمز عبور حداقل ۸ کاراکتر باشد.';return 1;}return 0;}
+ if(mode==='up'&&!otp){otp=true;$('#lo').hidden=false;$('#lb').textContent='تایید و ساخت حساب';n.textContent='کد ۵ رقمی ارسال شد (نسخه نمایشی: هر ۵ رقمی قبول است).';$('#lc').focus();return;}
+ if(mode==='up'&&!/^\d{5}$/.test(dg($('#lc').value.trim()))){n.textContent='کد تایید ۵ رقمی را وارد کنید.';return;}
+ S.user={n:mode==='up'?nm:'کاربر '+m.slice(-4)};st('aimo-user',S.user);who();toast('خوش آمدی، '+S.user.n);e.target.reset();tab('in');show('home');};
+/* reviews */
+$('#rf').onsubmit=function(e){e.preventDefault();if($('#hp').value)return;if(Date.now()-(S.lr||0)<20000){$('#rnt').textContent='لطفا کمی صبر کنید.';return;}S.lr=Date.now();var s=+$('#rs').value,el=document.createElement('div');el.className='rv';
+ el.innerHTML='<header><span></span><span class="st">'+'★'.repeat(s)+'☆'.repeat(5-s)+'</span></header><p></p>';el.querySelector('span').textContent=$('#rn').value.trim();el.querySelector('p').textContent=$('#rt').value.trim();
+ $('#rl').insertBefore(el,$('#rl').firstChild);$('#re').hidden=true;e.target.reset();$('#rnt').textContent='نظر شما نمایش داده شد.';};
+/* blog */
+$('#bl').innerHTML=BL.map(function(b,i){return '<button class="po2" data-bl="'+i+'" aria-expanded="false"><div class="tile '+b[0]+'">'+ic(b[1])+'</div><div class="t"><h3>'+b[2]+'</h3><small>'+b[3]+'</small><p class="x" hidden>'+b[4]+'</p></div></button>';}).join('');
+/* events */
+document.addEventListener('click',function(e){var t=e.target,b;
+ if(b=t.closest('[data-go]')){e.preventDefault();show(b.dataset.go);if(b.dataset.tab2)tab(b.dataset.tab2);return;}
+ if(b=t.closest('[data-to]')){to(b.dataset.to);$('#nav').classList.remove('on');return;}
+ if(b=t.closest('[data-cat]')){pick(b.dataset.cat,b.dataset.sq);return;}
+ if(b=t.closest('[data-chip]')){S.cat=b.dataset.chip;S.q='';$('#q').value='';grid();return;}
+ if(b=t.closest('[data-add]')){var id=b.dataset.add;S.cart[id]=(S.cart[id]||0)+1;cart();var bb=$('#cc');bb.classList.remove('bump');void bb.offsetWidth;bb.classList.add('bump');toast('به سبد خرید اضافه شد');return;}
+ if(b=t.closest('[data-q]')){var k=b.dataset.q;S.cart[k]=Math.max(0,(S.cart[k]||0)+ +b.dataset.d);cart();return;}
+ if(b=t.closest('[data-sl]')){go(+b.dataset.sl);auto();return;}
+ if(b=t.closest('[data-tab]')){tab(b.dataset.tab);return;}
+ if(b=t.closest('[data-bl]')){var p=b.querySelector('.x');p.hidden=!p.hidden;b.setAttribute('aria-expanded',String(!p.hidden));return;}
+ if(b=t.closest('[data-copy]')){var v=b.dataset.copy;try{navigator.clipboard.writeText(v).then(function(){toast('کپی شد: '+v);},function(){toast(v);});}catch(x){toast(v);}return;}
+ if(b=t.closest('[data-msg]')){toast(b.dataset.msg);return;}
+ if(b=t.closest('[data-act]')){var a=b.dataset.act;
+  if(a==='menu')$('#nav').classList.toggle('on');
+  else if(a==='cart')drawer(true);else if(a==='close')drawer(false);
+  else if(a==='support')$('#sp').hidden=!$('#sp').hidden;
+  else if(a==='search'){show('home');S.cat='all';grid();to('products');setTimeout(function(){$('#q').focus();},350);}
+  else if(a==='theme'){var r=document.documentElement,c=r.dataset.theme||(matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'),n=c==='dark'?'light':'dark';r.dataset.theme=n;st('aimo-theme',n);}
+  return;}
+ if(!t.closest('#sp'))$('#sp').hidden=true;});
+$('#co').onclick=function(){if(!S.user){drawer(false);toast('ابتدا وارد حساب شوید');show('login');return;}$('#dm').textContent='درگاه پرداخت هنوز به این نسخه متصل نیست.';};
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){drawer(false);$('#sp').hidden=true;}});
+var th=st('aimo-theme');if(th)document.documentElement.dataset.theme=th;
+var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{rootMargin:'0px 0px -5% 0px'}):null;
+function rev(root){var n=0;(root||document).querySelectorAll('.sh,.cb,.cd,.tr,.pm,.sb,.po2,.fq details,.rg>*,.cx').forEach(function(el){if(el.classList.contains('rv-in'))return;el.classList.add('rv-in');el.style.setProperty('--d',(n++%6)*60+'ms');if(io)io.observe(el);else el.classList.add('in');});}
+/* security + admin */
+function clean(s,n){return String(s==null?'':s).replace(/[<>&"'`]/g,'').trim().slice(0,n);}
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return '&#'+c.charCodeAt(0)+';';});}
+var cr=crypto.subtle,te=new TextEncoder(),b64=function(a){return btoa(String.fromCharCode.apply(0,new Uint8Array(a)));},ub=function(s){return Uint8Array.from(atob(s),function(c){return c.charCodeAt(0);});};
+function kdf(pw,salt){return cr.importKey('raw',te.encode(pw),'PBKDF2',false,['deriveBits']).then(function(k){return cr.deriveBits({name:'PBKDF2',hash:'SHA-256',salt:salt,iterations:310000},k,256);});}
+function same(a,b){if(a.length!==b.length)return false;var r=0;for(var i=0;i<a.length;i++)r|=a.charCodeAt(i)^b.charCodeAt(i);return !r;}
+var B32='ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
+function rnd32(){var a=crypto.getRandomValues(new Uint8Array(32)),s='';for(var i=0;i<32;i++)s+=B32[a[i]%32];return s;}
+function d32(s){var b='',o=[],i;for(i=0;i<s.length;i++)b+=('00000'+B32.indexOf(s[i]).toString(2)).slice(-5);for(i=0;i+8<=b.length;i+=8)o.push(parseInt(b.substr(i,8),2));return new Uint8Array(o);}
+function totp(sec,t){var c=Math.floor(t/30000),m=new Uint8Array(8);for(var i=7;i>=0;i--){m[i]=c&255;c=Math.floor(c/256);}
+ return cr.importKey('raw',d32(sec),{name:'HMAC',hash:'SHA-1'},false,['sign']).then(function(k){return cr.sign('HMAC',k,m);}).then(function(h){h=new Uint8Array(h);var o=h[19]&15,n=(((h[o]&127)<<24)|(h[o+1]<<16)|(h[o+2]<<8)|h[o+3])%1e6;return ('00000'+n).slice(-6);});}
+function chk2(sec,code){return Promise.all([-1,0,1].map(function(d){return totp(sec,Date.now()+d*30000);})).then(function(r){return r.indexOf(code)>-1;});}
+function lg(m){var l=st('aimo-log')||[];l.unshift([Date.now(),m]);st('aimo-log',l.slice(0,60));}
+var AD=document.createElement('div'),auth=false,idle;AD.className='ad';AD.hidden=true;document.body.appendChild(AD);
+function touch(){clearTimeout(idle);if(auth)idle=setTimeout(function(){out('نشست به دلیل عدم فعالیت بسته شد');},6e5);}
+function out(m){if(auth)lg('خروج');auth=false;clearTimeout(idle);AD.hidden=true;AD.innerHTML='';try{history.replaceState(null,'',location.pathname+location.search);}catch(x){}if(m)toast(m);}
+function adm(){AD.hidden=false;auth?panel():gate();}
+function weak(p){return p.length<12||!/[a-zA-Z]/.test(p)||!/\d/.test(p);}
+function gate(){var c=st('aimo-adm');
+ AD.innerHTML='<div class="lw"><h2>'+(c?'ورود مدیر':'ساخت رمز مدیر')+'</h2><form class="fm" id="af" novalidate><label>رمز عبور<input id="ap" type="password" autocomplete="'+(c?'current-password':'new-password')+'"></label>'+(c?(c.t?'<label>کد ۶ رقمی احراز دوعاملی<input id="ac" inputmode="numeric" maxlength="6" autocomplete="one-time-code"></label>':''):'<label>تکرار رمز (حداقل ۱۲ کاراکتر، حرف و عدد)<input id="ap2" type="password" autocomplete="new-password"></label>')+'<button class="btn" type="submit">'+(c?'ورود':'ایجاد و ورود')+'</button><button class="btn o" type="button" id="ax">بستن</button><div class="nt" id="an" role="status"></div></form></div>';
+ $('#ax').onclick=function(){out();};
+ $('#af').onsubmit=function(e){e.preventDefault();var n=$('#an'),pw=$('#ap').value,now=Date.now();
+  if(!c){if(weak(pw)){n.textContent='رمز باید حداقل ۱۲ کاراکتر و شامل حرف و عدد باشد.';return;}if(pw!==$('#ap2').value){n.textContent='تکرار رمز یکسان نیست.';return;}
+   var sl=crypto.getRandomValues(new Uint8Array(16));kdf(pw,sl).then(function(h){st('aimo-adm',{s:b64(sl),h:b64(h),t:''});lg('ساخت حساب مدیر');auth=true;panel();});return;}
+  var lk=st('aimo-lk')||{f:0,u:0};
+  if(now<lk.u){n.textContent='حساب موقتا قفل است؛ '+fa(Math.ceil((lk.u-now)/1000))+' ثانیه دیگر تلاش کنید.';return;}
+  kdf(pw,ub(c.s)).then(function(h){var ok=same(b64(h),c.h);return ok&&c.t?chk2(c.t,dg($('#ac').value.trim())):ok;}).then(function(ok){
+   if(ok){st('aimo-lk',{f:0,u:0});lg('ورود موفق');auth=true;panel();return;}
+   lk.f++;var w=lk.f>=3?Math.min(3600,Math.pow(2,lk.f-2)*15)*1000:0;st('aimo-lk',{f:lk.f,u:now+w});lg('ورود ناموفق ('+lk.f+')');n.textContent='رمز یا کد نادرست است.'+(w?' حساب '+fa(w/1000)+' ثانیه قفل شد.':'');});};}
+function savep(m){st('aimo-products',P);lg(m);grid();cart();panel('p');}
+function panel(tab){touch();tab=tab||'p';var c=st('aimo-adm'),h='<div class="w ap"><div class="ah"><h2>پنل مدیریت</h2><div class="tb"><button data-at="p" aria-pressed="'+(tab==='p')+'">محصولات</button><button data-at="s" aria-pressed="'+(tab==='s')+'">امنیت</button></div><button class="btn o" data-ao="1">خروج</button></div>';
+ if(tab==='p')h+='<form class="fm" id="pf" novalidate><input type="hidden" id="pi"><label>نام محصول<input id="pn" maxlength="80"></label><label>دسته<select id="pc">'+C.map(function(x){return '<option value="'+x.k+'">'+x.n+'</option>';}).join('')+'</select></label><label>قیمت (تومان)<input id="pp" inputmode="numeric"></label><label>برچسب (اختیاری)<input id="pb" maxlength="20"></label><button class="btn" type="submit">ذخیره محصول</button><div class="nt" id="pm" role="status"></div></form><div class="at">'+P.map(function(x){return '<div class="ar"><span>'+x.n+'<small> · '+fa(x.p)+'</small></span><span><button data-ae="'+x.id+'">ویرایش</button><button data-ad="'+x.id+'">حذف</button></span></div>';}).join('')+'</div>';
+ else h+='<div class="sg"><form class="fm" id="cf"><b>تغییر رمز</b><label>رمز فعلی<input id="o1" type="password" autocomplete="current-password"></label><label>رمز جدید (حداقل ۱۲ کاراکتر)<input id="o2" type="password" autocomplete="new-password"></label><button class="btn" type="submit">تغییر رمز</button><div class="nt" id="cn2" role="status"></div></form><div class="fm"><b>احراز هویت دوعاملی (TOTP)</b><p class="nt">'+(c.t?'فعال است.':'غیرفعال است.')+'</p>'+(c.t?'<button class="btn o" id="t0">غیرفعال‌سازی</button>':'<button class="btn" id="t1">فعال‌سازی</button>')+'<div id="tb2"></div></div></div><h3>گزارش رویدادها</h3><div class="at">'+((st('aimo-log')||[]).map(function(r){return '<div class="ar"><span>'+esc(r[1])+'</span><small>'+new Date(r[0]).toLocaleString('fa-IR')+'</small></div>';}).join('')||'<div class="em">خالی است</div>')+'</div>';
+ AD.innerHTML=h+'</div>';
+ var f=$('#pf');if(f)f.onsubmit=function(e){e.preventDefault();var n=clean($('#pn').value,80),pr=+dg($('#pp').value).replace(/[,،\s]/g,''),id=+$('#pi').value;
+  if(n.length<3||!(pr>0)||pr>1e9){$('#pm').textContent='نام (حداقل ۳ حرف) و قیمت معتبر لازم است.';return;}
+  var o={id:id||Math.max.apply(0,P.map(function(x){return x.id;}).concat(0))+1,c:$('#pc').value,n:n,p:Math.round(pr),b:clean($('#pb').value,20)||undefined},i=P.findIndex(function(x){return x.id===o.id;});
+  if(i>-1)P[i]=o;else P.push(o);savep('ذخیره محصول: '+n);};
+ f=$('#cf');if(f)f.onsubmit=function(e){e.preventDefault();var n=$('#cn2'),np=$('#o2').value;if(weak(np)){n.textContent='رمز جدید ضعیف است.';return;}
+  kdf($('#o1').value,ub(c.s)).then(function(h){if(!same(b64(h),c.h)){n.textContent='رمز فعلی نادرست است.';return;}var sl=crypto.getRandomValues(new Uint8Array(16));return kdf(np,sl).then(function(h2){c.s=b64(sl);c.h=b64(h2);st('aimo-adm',c);lg('تغییر رمز');n.textContent='رمز تغییر کرد.';});});};
+ f=$('#t1');if(f)f.onclick=function(){var s=rnd32();$('#tb2').innerHTML='<p class="nt">این کلید را در برنامه Authenticator به‌صورت دستی وارد کن:</p><code class="kc" dir="ltr">'+s+'</code><label>کد ۶ رقمی برای تایید<input id="tc" inputmode="numeric" maxlength="6"></label><button class="btn" id="t2">تایید و فعال‌سازی</button><div class="nt" id="tn" role="status"></div>';
+  $('#t2').onclick=function(){chk2(s,dg($('#tc').value.trim())).then(function(ok){if(!ok){$('#tn').textContent='کد نادرست است.';return;}c.t=s;st('aimo-adm',c);lg('فعال‌سازی ۲FA');panel('s');});};};
+ f=$('#t0');if(f)f.onclick=function(){c.t='';st('aimo-adm',c);lg('غیرفعال‌سازی ۲FA');panel('s');};}
+AD.addEventListener('click',function(e){touch();var b=e.target.closest('button');if(!b||!auth)return;
+ if(b.dataset.at)panel(b.dataset.at);else if(b.dataset.ao)out('خارج شدید');
+ else if(b.dataset.ae){var x=P.filter(function(p){return p.id==b.dataset.ae;})[0];if(x){$('#pi').value=x.id;$('#pn').value=x.n;$('#pc').value=x.c;$('#pp').value=x.p;$('#pb').value=x.b||'';$('#pn').focus();}}
+ else if(b.dataset.ad){if(!b.dataset.s){b.dataset.s=1;b.textContent='مطمئنی؟';return;}var id=+b.dataset.ad;P=P.filter(function(p){return p.id!==id;});delete S.cart[id];savep('حذف محصول #'+id);}});
+AD.addEventListener('input',touch);
+function pills(){$$('.tb:not([data-p]),.chips:not([data-p]),.nav:not([data-p])').forEach(function(bx){bx.dataset.p=1;var hv=bx.classList.contains('nav'),pl=document.createElement('i');pl.className='pl'+(hv?' hv':'');bx.insertBefore(pl,bx.firstChild);
+ var mv=function(t){var b=t||bx.querySelector('[aria-pressed=true]');if(!b||!b.offsetWidth){pl.style.opacity=0;return;}var f=!pl.dataset.s;if(f)pl.style.transition='none';pl.style.opacity=1;pl.style.width=b.offsetWidth+'px';pl.style.height=b.offsetHeight+'px';pl.style.transform='translate3d('+b.offsetLeft+'px,'+b.offsetTop+'px,0)';if(f){pl.dataset.s=1;void pl.offsetWidth;pl.style.transition='';}};
+ if(hv){bx.addEventListener('pointerover',function(e){var b=e.target.closest('button');if(b)mv(b);});bx.addEventListener('pointerleave',function(){pl.style.opacity=0;});}
+ else{new MutationObserver(function(){mv();}).observe(bx,{attributes:true,attributeFilter:['aria-pressed'],subtree:true});if(window.ResizeObserver)new ResizeObserver(function(){mv();}).observe(bx);if(document.fonts)document.fonts.ready.then(function(){mv();});mv();}});}
+pills();new MutationObserver(pills).observe(AD,{childList:true});
+var lc=0,lt;$$('.logo').forEach(function(l){l.addEventListener('click',function(){lc++;clearTimeout(lt);lt=setTimeout(function(){lc=0;},1500);if(lc>=5){lc=0;adm();}});});
+addEventListener('hashchange',function(){if(location.hash==='#admin')adm();});if(location.hash==='#admin')adm();
+var raf;document.addEventListener('pointermove',function(e){var c=e.target.closest&&e.target.closest('.cd,.cb,.cx,.po2,.sb');if(!c||raf)return;raf=requestAnimationFrame(function(){raf=0;var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px');});},{passive:true});
+grid();rev();cart();who();var h=location.hash.slice(1);if(h==='cats'||h==='login')show(h);
+})();
+</script></body></html>
